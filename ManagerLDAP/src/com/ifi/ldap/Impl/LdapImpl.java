@@ -110,11 +110,11 @@ public class LdapImpl {
 			// Create the objectclass to add
 			Attribute email = new BasicAttribute("mail", "geisel@wizards.com");
 			ModificationItem[] mods = new ModificationItem[1];
-			mods[0] = new ModificationItem(DirContext.REPLACE_ATTRIBUTE,email);
-			// Add additional value to "telephonenumber"
+			mods[0] = new ModificationItem(DirContext.REPLACE_ATTRIBUTE, email);
+			// Add
+			// Remove
 			// modify the entry
 			dctx.modifyAttributes(name, mods);
-			// dctx.createSubcontext(getUserDN("TestUser"), container);
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -146,38 +146,66 @@ public class LdapImpl {
 			e.printStackTrace();
 		}
 	}
-	
-	public String getDnByUid (String user) throws Exception {
-		DirContext ctx=null;
-		String dn=null;
-		try{
-			ctx = ldapContext();
-			//System.out.println("ctx=="+ctx);
-			String filter = "(uid=" + user + ")";
-			SearchControls ctrl = new SearchControls();
-			ctrl.setSearchScope(SearchControls.SUBTREE_SCOPE);
-			NamingEnumeration answer = ctx.search("", filter, ctrl);
-	
-			if (answer.hasMore()) {
-				SearchResult result = (SearchResult) answer.next();
-				Attributes attributes= result.getAttributes();
-				System.out.println("attributes:="+attributes.toString());
-				System.out.println("	description:="+attributes.get("description"));
-				System.out.println("	userPassword:="+attributes.get("userPassword"));
-				System.out.println("	deCode Password >>> userPassword:= "+ new String((byte[])attributes.get("userPassword").get()));
-				dn = result.getNameInNamespace();
-			}
-			else {
-				dn = null;
-			}
-			answer.close();
-			System.out.println("getDnByUid()>>>>>>>>dn::::"+dn);
-		}catch (Exception e) {
-			// TODO: handle exception
+
+	public String getDnByUid(String user) throws Exception {
+		DirContext dctx = null;
+		String dn;
+		dctx = ldapContext();
+		String filter = "(uid=" + user + ")";
+		SearchControls ctrl = new SearchControls();
+		ctrl.setSearchScope(SearchControls.SUBTREE_SCOPE);
+		NamingEnumeration answer = dctx.search("dc=maxcrc,dc=com", filter, ctrl);
+
+		if (answer.hasMore()) {
+			SearchResult result = (SearchResult) answer.next();
+			Attributes attributes = result.getAttributes();
+			System.out.println("attributes:=" + attributes.toString());
+			System.out.println("	description:=" + attributes.get("description"));
+			System.out.println("	userPassword:=" + attributes.get("userPassword"));
+			System.out.println("	deCode Password >>> userPassword:= "
+					+ new String((byte[]) attributes.get("userPassword").get()));
+			dn = result.getNameInNamespace();
+		} else {
+			dn = null;
 		}
+		answer.close();
+		System.out.println("getDnByUid()>>>>>>>>dn::::" + dn);
 		return dn;
 	}
-	
+
+	public void addGroup(String name, String description) throws NamingException {
+		DirContext dcxt = null;
+		try {
+			dcxt = ldapContext();
+			// Create a container set of attributes
+			Attributes container = new BasicAttributes();
+
+			// Create the objectclass to add
+			Attribute objClasses = new BasicAttribute("objectClass");
+			objClasses.add("top");
+			objClasses.add("groupOfUniqueNames");
+			objClasses.add("groupOfForethoughtNames");
+
+			// Assign the name and description to the group
+			Attribute cn = new BasicAttribute("cn", name);
+			Attribute desc = new BasicAttribute("description", description);
+
+			// Add these to the container
+			container.put(objClasses);
+			container.put(cn);
+			container.put(desc);
+
+			// Create the entry
+			dcxt.createSubcontext(getGroupDN(name), container);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private String getGroupDN(String name) {
+		return new StringBuffer().append("cn=").append(name).append(",").append("OU=people,dc=maxcrc,dc=com").toString();
+	}
+
 	public boolean isValidUser(String username, String password) {
 		try {
 			DirContext context = getInitialContext("10.225.3.63", 389, getUserDN("TestUser"), "test1");
