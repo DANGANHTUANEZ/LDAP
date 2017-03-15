@@ -203,6 +203,7 @@ public class LdapImpl {
 	}
 
 	private String getGroupDN(String name) {
+		
 		return new StringBuffer().append("cn=").append(name).append(",").append("OU=people,dc=maxcrc,dc=com").toString();
 	}
 
