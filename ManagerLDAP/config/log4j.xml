@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="dbAdaptor" class="org.apache.log4j.DailyRollingFileAppender">
+	<param name="File" value="./log/dbAdaptor.log"/>
+	<param name="DatePattern" value="'.'yyyy-MM-dd-HH"/>
+    	<param name="Append" value="true"/>
+    	<layout class="org.apache.log4j.PatternLayout">
+		<!--<param name="ConversionPattern" value="[%d{yy-MM-dd HH:mm}] [%-5p] %x -%m %c{2} (%F:%L) %n"/>-->
+		<param name="ConversionPattern" value="[%d{HH:mm.ss}][%c{1}] %m %n"/>
+    	</layout>
+    </appender>
+    
+    <appender name="db" class="org.apache.log4j.DailyRollingFileAppender">
+	<param name="File" value="./log/db.log"/>
+	<param name="DatePattern" value="'.'yyyy-MM-dd-HH"/>
+    	<param name="Append" value="true"/>
+    	<layout class="org.apache.log4j.PatternLayout">
+		<!--<param name="ConversionPattern" value="[%d{yy-MM-dd HH:mm}] [%-5p] %x -%m %c{2} (%F:%L) %n"/>-->
+		<param name="ConversionPattern" value="[%d{HH:mm.ss}][%c{1}] %m %n"/>
+    	</layout>
+    </appender>
+    
+    <appender name="adaptor" class="org.apache.log4j.DailyRollingFileAppender">
+	<param name="File" value="./log/adaptor.log"/>
+	<param name="DatePattern" value="'.'yyyy-MM-dd-HH"/>
+    	<param name="Append" value="true"/>
+    	<layout class="org.apache.log4j.PatternLayout">
+		<!--<param name="ConversionPattern" value="[%d{yy-MM-dd HH:mm}] [%-5p] %x -%m %c{2} (%F:%L) %n"/>-->
+		<param name="ConversionPattern" value="[%d{HH:mm.ss}][%c{1}] %m %n"/>
+    	</layout>
+    </appender>
+    
+    <!-- all -->	
+    <logger name="com.ifi.test" additivity="false">
+        <level value="DEBUG"/>
+	<appender-ref ref="test"/>
+    </logger>
+
+    <logger name="com.ifi.db" additivity="false">
+        <level value="DEBUG"/>
+	<appender-ref ref="db"/>
+    </logger>
+    
+    <logger name="com.ifi.common.LogUtil" additivity="false">
+        <level value="DEBUG"/>
+	<appender-ref ref="adaptor"/>
+    </logger>
+
+</log4j:configuration>

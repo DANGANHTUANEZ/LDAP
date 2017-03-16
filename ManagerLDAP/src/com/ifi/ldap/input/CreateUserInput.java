@@ -1,10 +1,12 @@
 package com.ifi.ldap.input;
 
-import java.util.Map;
+import java.util.List;
+
+import com.ifi.ldap.entity.LdapAttribute;
 
 public class CreateUserInput {
 	private String userDN;
-	private Map<String, String> userAttributes;
+	private List<LdapAttribute> listAttr;
 
 	public String getUserDN() {
 		return userDN;
@@ -14,20 +16,20 @@ public class CreateUserInput {
 		this.userDN = userDN;
 	}
 
-	public Map<String, String> getUserAttributes() {
-		return userAttributes;
+	public List<LdapAttribute> getListAttr() {
+		return listAttr;
 	}
 
-	public void setUserAttributes(Map<String, String> userAttributes) {
-		this.userAttributes = userAttributes;
+	public void setListAttr(List<LdapAttribute> listAttr) {
+		this.listAttr = listAttr;
 	}
 
 	public CreateUserInput() {
 	}
 
-	public CreateUserInput(String userDN, Map<String, String> userAttributes) {
+	public CreateUserInput(String userDN, List<LdapAttribute> listAttr) {
 		this.userDN = userDN;
-		this.userAttributes = userAttributes;
+		this.listAttr = listAttr;
 	}
 
 }
