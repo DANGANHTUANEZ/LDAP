@@ -1,8 +1,8 @@
-package com.ifi.ldap.test;
+package it.com.ldap.test;
 
 
 
-import com.ifi.ldap.Impl.LdapImpl;
+import it.com.ldap.Impl.LdapImpl;
 
 public class Main {
 	public static void main(String[] args) {

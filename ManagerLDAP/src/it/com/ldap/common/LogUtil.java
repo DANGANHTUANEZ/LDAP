@@ -1,4 +1,4 @@
-package com.ifi.ldap.common;
+package it.com.ldap.common;
 
 import org.apache.log4j.Logger;
 

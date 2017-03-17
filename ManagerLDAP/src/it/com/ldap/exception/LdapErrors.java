@@ -1,4 +1,4 @@
-package com.ifi.ldap.exception;
+package it.com.ldap.exception;
 
 /**
  * The Enum WbobOnlineErrors.

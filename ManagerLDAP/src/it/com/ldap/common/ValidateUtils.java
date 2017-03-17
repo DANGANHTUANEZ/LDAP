@@ -1,4 +1,4 @@
-package com.ifi.ldap.common;
+package it.com.ldap.common;
 
 public class ValidateUtils {
 

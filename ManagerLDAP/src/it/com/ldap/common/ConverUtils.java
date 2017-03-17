@@ -1,10 +1,10 @@
-package com.ifi.ldap.common;
+package it.com.ldap.common;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ifi.ldap.entity.LdapAttribute;
-import com.ifi.ldap.input.User;
+import it.com.ldap.entity.LdapAttribute;
+import it.com.ldap.input.User;
 
 public class ConverUtils {
 	

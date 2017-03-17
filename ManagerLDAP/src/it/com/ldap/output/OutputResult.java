@@ -1,6 +1,6 @@
-package com.ifi.ldap.output;
+package it.com.ldap.output;
 
-import com.ifi.ldap.input.User;
+import it.com.ldap.input.User;
 
 public class OutputResult {
 	private User user;

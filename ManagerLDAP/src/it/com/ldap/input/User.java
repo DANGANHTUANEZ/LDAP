@@ -1,8 +1,8 @@
-package com.ifi.ldap.input;
+package it.com.ldap.input;
 
 import java.util.List;
 
-import com.ifi.ldap.entity.LdapAttribute;
+import it.com.ldap.entity.LdapAttribute;
 
 public class User {
 	private String userDN;

@@ -1,4 +1,4 @@
-package com.ifi.ldap.dao;
+package it.com.ldap.dao;
 
 public interface LdapDao {
 	

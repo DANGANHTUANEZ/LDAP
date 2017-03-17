@@ -1,4 +1,4 @@
-package com.ifi.ldap.Impl;
+package it.com.ldap.Impl;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -22,14 +22,14 @@ import javax.naming.directory.ModificationItem;
 import javax.naming.directory.SearchControls;
 import javax.naming.directory.SearchResult;
 
-import com.ifi.ldap.common.ConfigInfo;
-import com.ifi.ldap.common.Constant;
-import com.ifi.ldap.common.ConverUtils;
-import com.ifi.ldap.common.ValidateUtils;
-import com.ifi.ldap.entity.LdapAttribute;
-import com.ifi.ldap.input.User;
-import com.ifi.ldap.output.OutputResult;
-import com.ifi.ldap.output.UserOutput;
+import it.com.ldap.common.ConfigInfo;
+import it.com.ldap.common.Constant;
+import it.com.ldap.common.ConverUtils;
+import it.com.ldap.common.ValidateUtils;
+import it.com.ldap.entity.LdapAttribute;
+import it.com.ldap.input.User;
+import it.com.ldap.output.OutputResult;
+import it.com.ldap.output.UserOutput;
 
 import org.apache.log4j.Logger;
 

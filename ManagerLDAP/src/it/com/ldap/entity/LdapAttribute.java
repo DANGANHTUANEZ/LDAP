@@ -1,4 +1,4 @@
-package com.ifi.ldap.entity;
+package it.com.ldap.entity;
 
 import java.util.List;
 

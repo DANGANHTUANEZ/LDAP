@@ -1,4 +1,4 @@
-package com.ifi.ldap.output;
+package it.com.ldap.output;
 
 public class UserOutput {
 	private String result;
