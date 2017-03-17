@@ -1,6 +1,7 @@
 package com.ifi.ldap.test;
 
 
+
 import com.ifi.ldap.Impl.LdapImpl;
 
 public class Main {
@@ -10,7 +11,7 @@ public class Main {
 			//impl.deleteUser("Test1");
 			//impl.CreateUser();
 			//impl.ModifyUser();
-			System.out.println(impl.getDnByUserDN("TestUser1"));
+			System.out.println(new String(impl.checkDnByUserDN("Vu Nghia")));
 			//impl.addGroup("TestUser", "addGroup GroupTest");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

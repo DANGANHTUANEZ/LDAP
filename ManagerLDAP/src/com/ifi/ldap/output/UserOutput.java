@@ -1,6 +1,6 @@
 package com.ifi.ldap.output;
 
-public class CreateUserOutput {
+public class UserOutput {
 	private String result;
 	private String errorCode;
 	private String errorMessage;
@@ -29,10 +29,10 @@ public class CreateUserOutput {
 		this.errorMessage = errorMessage;
 	}
 
-	public CreateUserOutput() {
+	public UserOutput() {
 	}
 
-	public CreateUserOutput(String result, String errorCode, String errorMessage) {
+	public UserOutput(String result, String errorCode, String errorMessage) {
 		this.result = result;
 		this.errorCode = errorCode;
 		this.errorMessage = errorMessage;

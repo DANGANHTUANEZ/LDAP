@@ -1,0 +1,495 @@
+
+======2017-Mar-16 13:56:19 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 13:56:19 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 13:56:19 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR UserDN not specifiedjavax.naming.directory.InvalidAttributeValueException: 'givenName' has no values.; remaining name 'cn=TestUser,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 13:57:44 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 13:57:44 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 13:57:44 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR UserDN not specifiedjavax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - givenName: value #0 invalid per syntax]; remaining name 'cn=TestUser,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 13:58:18 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 13:58:18 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 13:58:18 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR UserDN not specifiedjavax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - givenName: value #0 invalid per syntax]; remaining name 'cn=TestUser,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 13:58:40 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 13:58:40 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 13:58:40 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR UserDN not specifiedjavax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - givenName: value #0 invalid per syntax]; remaining name 'cn=TestUser,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 13:59:21 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 13:59:21 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:35:26 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:35:26 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:35:26 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR Attribute [attribute key] doesn’t existjavax.naming.directory.InvalidAttributeIdentifierException: [LDAP: error code 17 - maildfgdfg: attribute type undefined]; remaining name 'cn=TestUser,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:35:43 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:35:43 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:35:43 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:36:39 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:36:39 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:36:39 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:37:10 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:37:10 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:37:10 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:37:53 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:37:53 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:37:53 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:38:13 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:38:13 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:38:51 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:38:51 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:38:51 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:39:45 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:39:45 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:39:45 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:40:16 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:40:16 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:40:16 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:40:40 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:40:40 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:40:40 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:41:32 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:41:32 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:41:32 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:41:49 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:41:49 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:41:49 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:43:30 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:43:30 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:54:45 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:54:45 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:54:45 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR UserDN not specifiedjavax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - photo: no validator for syntax 1.3.6.1.4.1.1466.115.121.1.23]; remaining name 'cn=Test,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:56:13 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:56:13 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:56:13 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR UserDN not specifiedjavax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - photo: no validator for syntax 1.3.6.1.4.1.1466.115.121.1.23]; remaining name 'cn=Test1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:56:29 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:56:29 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:56:29 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR UserDN not specifiedjavax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - givenName: value #0 invalid per syntax]; remaining name 'cn=Test1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 14:59:22 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 14:59:22 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 14:59:22 [main] com.ifi.ldap.Impl.LdapImpl 
+  ERROR Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: 'givenName' has no values.; remaining name 'cn=Test1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-16 15:11:48 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:11:48 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:12:35 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:12:35 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:15:33 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:15:33 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:15:57 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:15:57 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:16:34 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:16:34 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:16:38 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:16:38 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:17:57 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:17:57 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:18:41 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:18:41 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:19:25 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:19:25 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:20:54 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:20:54 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:29:50 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:29:50 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:31:07 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:31:07 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 15:34:03 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 15:34:03 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:02:42 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:02:42 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:32:56 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:32:56 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:33:23 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:33:23 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:36:11 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:36:11 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:37:02 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:37:02 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:37:30 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:37:30 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:37:38 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:37:38 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:40:55 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:40:55 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:42:42 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:42:42 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:44:44 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:44:44 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:45:24 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:45:24 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 17:52:54 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 17:52:54 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-16 18:04:45 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-16 18:04:45 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 10:46:37 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 10:46:37 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 10:48:28 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 10:48:28 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 10:49:23 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 10:49:23 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 10:52:30 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 10:52:30 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 15:08:45 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 15:08:46 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:01:57 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:01:57 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:27:39 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:27:39 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:28:18 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:28:18 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:29:11 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:29:11 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:29:59 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:29:59 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:30:29 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:30:29 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:30:37 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:30:37 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:31:35 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:31:35 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:31:56 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:31:56 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:32:29 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:32:29 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:33:00 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:33:00 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:35:40 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:35:40 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:36:08 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:36:08 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:37:05 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:37:05 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:54:12 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:54:12 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 16:54:25 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 16:54:25 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 17:01:24 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 17:01:24 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 17:10:25 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 17:10:25 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 17:11:33 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 17:11:33 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-17 17:12:30 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 17:12:30 [main] com.ifi.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext

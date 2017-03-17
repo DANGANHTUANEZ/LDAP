@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ifi.ldap.entity.LdapAttribute;
 
-public class CreateUserInput {
+public class User {
 	private String userDN;
 	private List<LdapAttribute> listAttr;
 
@@ -24,10 +24,10 @@ public class CreateUserInput {
 		this.listAttr = listAttr;
 	}
 
-	public CreateUserInput() {
+	public User() {
 	}
 
-	public CreateUserInput(String userDN, List<LdapAttribute> listAttr) {
+	public User(String userDN, List<LdapAttribute> listAttr) {
 		this.userDN = userDN;
 		this.listAttr = listAttr;
 	}
