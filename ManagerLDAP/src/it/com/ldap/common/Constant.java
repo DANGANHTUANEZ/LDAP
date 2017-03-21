@@ -20,15 +20,33 @@ public class Constant {
 	
 	public static final String UserDNNotSpecified="UserDN not specified";
 	public static final String UserAlreadyExists="User already exists";
-	public static final String AttributeKey="Attribute [attribute key] doesn’t exist";
-	public static final String AttributeValue="Attribute [attribute key] has not a valid value [attribute value]  (Only If applicable)";
+	//public static final String UserAttributeKey="Attribute [attribute key] doesn’t exist";
+	//public static final String UserAttributeValue="Attribute [attribute key] has not a valid value [attribute value]  (Only If applicable)";
 	public static final String UserDNValidate="UserDN is not a valid Ldap DN";
+	public static final String UserDoesntExist="User doesn’t exist";
+	
+	
+	public static final String GroupDNNotSpecified="GroupDN not specified";
+	public static final String GroupAlreadyExists="Group already exists";
+	//public static final String GroupAttributeKey="Attribute [attribute key] doesn’t exist";
+	//public static final String GroupAttributeValue="Attribute [attribute key] has not a valid value [attribute value]  (Only If applicable)";
+	public static final String GroupDNValidate="UserDN is not a valid Ldap DN";
+	public static final String GroupDoesntExist="User doesn’t exist";
+	
 	public static final String GenericError="Generic error [internal description if available]";
 	
 	
+	public static String attributeKey(String msg){
+		String[] arrStr = msg.split(":");
+		System.out.println(arrStr[1]);
+		return "Attribute [attribute key:= "+arrStr[1].substring(arrStr[1].indexOf("-")+1, arrStr[1].length()).trim()+"] doesn’t exist";
+	}
 	
-	public static final String UserDoesntExist="User doesn’t exist";
-	
+	public static String attributeValue(String msg){
+		String[] arrStr = msg.split(":");
+		System.out.println(arrStr[1]);
+		return "Attribute [attribute key:= "+arrStr[1].substring(arrStr[1].indexOf("-")+1, arrStr[1].length()).trim()+"] has not a valid value";
+	}
 	
 	
 }

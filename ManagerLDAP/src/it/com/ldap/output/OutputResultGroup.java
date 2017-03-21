@@ -1,9 +1,20 @@
 package it.com.ldap.output;
 
-public class OutputResult {
+import it.com.ldap.entity.Group;
+
+public class OutputResultGroup {
+	private Group group;
 	private String result;
 	private String errorCode;
 	private String errorMessage;
+
+	public Group getGroup() {
+		return group;
+	}
+
+	public void setGroup(Group group) {
+		this.group = group;
+	}
 
 	public String getResult() {
 		return result;
@@ -29,10 +40,11 @@ public class OutputResult {
 		this.errorMessage = errorMessage;
 	}
 
-	public OutputResult() {
+	public OutputResultGroup() {
 	}
 
-	public OutputResult(String result, String errorCode, String errorMessage) {
+	public OutputResultGroup(Group group, String result, String errorCode, String errorMessage) {
+		this.group = group;
 		this.result = result;
 		this.errorCode = errorCode;
 		this.errorMessage = errorMessage;

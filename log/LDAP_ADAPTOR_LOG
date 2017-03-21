@@ -493,3 +493,1050 @@
 
 ======2017-Mar-17 17:12:30 [main] com.ifi.ldap.Impl.LdapImpl 
   INFO  END--ldapContext
+
+======2017-Mar-17 17:46:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-17 17:46:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:29:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:29:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:31:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:31:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:31:43 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:31:43 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:32:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:32:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:32:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:32:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:35:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:35:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:37:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:37:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:51:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:51:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:51:31 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:51:31 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:51:31 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: Malformed 'objectClass' attribute value; remaining name 'cn=TestUser123,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 09:52:35 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:52:35 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:52:35 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: Malformed 'objectClass' attribute value; remaining name 'cn=TestUser123,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 09:53:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:53:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:53:55 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: Malformed 'objectClass' attribute value; remaining name 'cn=TestUser123,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 09:54:51 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:54:51 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:54:51 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: Malformed 'objectClass' attribute value; remaining name 'cn=TestUser123,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 09:57:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:57:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:57:50 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: Malformed 'objectClass' attribute value; remaining name 'cn=TestUser123,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 09:59:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:59:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:59:54 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 09:59:54 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 09:59:54 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=Test1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 10:00:29 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:00:29 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:00:29 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=Test1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 10:00:57 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:00:57 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:00:57 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=Test1,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 10:01:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:01:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:02:40 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:02:40 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:02:40 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: Malformed 'objectClass' attribute value; remaining name 'cn=Test1234,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 10:03:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:03:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:03:30 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=Test1234,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 10:04:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:04:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:06:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:06:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:06:04 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: Malformed 'mail' attribute value; remaining name 'cn=Test123456,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 10:14:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:14:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:17:57 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:17:57 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:31:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:31:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:31:17 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser123,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 10:32:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:32:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:32:13 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser123,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 10:34:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:34:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 10:34:56 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 10:38:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 10:38:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 11:13:39 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 11:13:39 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 11:15:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 11:15:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 11:28:54 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 11:28:54 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 11:28:54 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser3334414,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 11:28:54 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 11:28:54 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 11:28:59 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 11:28:59 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 11:29:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 11:29:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 11:33:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 11:33:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 11:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 11:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 11:35:03 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 11:35:03 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 13:50:20 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 13:50:20 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 13:50:29 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 13:50:29 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 14:35:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 14:35:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 14:39:59 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 14:39:59 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 14:39:59 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 14:39:59 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 15:37:46 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 15:37:46 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 15:42:02 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 15:42:02 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 15:42:21 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 15:42:21 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 15:42:59 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 15:42:59 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Generic errorjava.lang.ArrayIndexOutOfBoundsException: 0
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:07:07 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Generic errorjava.lang.ArrayIndexOutOfBoundsException: 0
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:09:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:10:56 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:15:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:15:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Generic errorjava.lang.ArrayIndexOutOfBoundsException: 7
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:15:14 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:18:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:18:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:18:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:18:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:18:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:18:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:18:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:18:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:18:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:18:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:21:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:28:16 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:30:53 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:30:53 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:32:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:32:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:32:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:32:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:37:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:38:35 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:38:35 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:38:35 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:38:35 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:38:35 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:38:35 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:45:58 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:46:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:46:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:46:57 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:46:57 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:47:37 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:47:37 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:48:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:48:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 16:48:51 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 16:48:51 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:14:12 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:14:12 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:14:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:14:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:14:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:14:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:14:13 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 17:14:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:14:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:14:37 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:14:37 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:14:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:14:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:14:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:14:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:15:04 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 17:15:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:15:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:15:10 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:15:10 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:15:10 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:15:10 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:15:10 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:15:10 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:16:51 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:16:51 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:16:52 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:16:52 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:16:52 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:16:52 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:16:52 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR ModifyUser--Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - objectClass: value #0 invalid per syntax]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-20 17:16:52 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:16:52 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:17:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:17:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:17:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:17:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:22:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:22:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:22:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:22:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:22:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:22:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-20 17:22:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-20 17:22:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:35:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:35:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:38:28 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:38:28 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:40:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:40:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:43:28 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:43:28 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:44:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:44:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:44:35 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:44:35 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:44:52 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:44:52 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:52:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:52:24 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:52:24 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - photo: no validator for syntax 1.3.6.1.4.1.1466.115.121.1.23]; remaining name 'cn=Test0123,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-21 09:53:26 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:53:26 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:54:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:54:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:54:01 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - photo: no validator for syntax 1.3.6.1.4.1.1466.115.121.1.23]; remaining name 'cn=Test01223,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-21 09:56:45 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 09:56:45 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 09:56:45 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - photo: no validator for syntax 1.3.6.1.4.1.1466.115.121.1.23]; remaining name 'cn=Test01223,OU=people,dc=maxcrc,dc=com'

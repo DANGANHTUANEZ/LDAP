@@ -1,9 +1,20 @@
 package it.com.ldap.output;
 
-public class UserOutput {
+import it.com.ldap.entity.User;
+
+public class OutputResultUser {
+	private User user;
 	private String result;
 	private String errorCode;
 	private String errorMessage;
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 
 	public String getResult() {
 		return result;
@@ -29,10 +40,11 @@ public class UserOutput {
 		this.errorMessage = errorMessage;
 	}
 
-	public UserOutput() {
+	public OutputResultUser() {
 	}
 
-	public UserOutput(String result, String errorCode, String errorMessage) {
+	public OutputResultUser(User user, String result, String errorCode, String errorMessage) {
+		this.user = user;
 		this.result = result;
 		this.errorCode = errorCode;
 		this.errorMessage = errorMessage;
