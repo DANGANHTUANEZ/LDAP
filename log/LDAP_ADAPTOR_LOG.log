@@ -1,0 +1,24 @@
+
+======2017-Mar-21 16:56:40 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--CreateUser
+
+======2017-Mar-21 16:56:40 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 16:56:40 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 16:56:40 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-21 16:57:25 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--CreateUser
+
+======2017-Mar-21 16:57:25 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 16:57:25 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 16:57:25 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'

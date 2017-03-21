@@ -22,7 +22,8 @@ import javax.naming.directory.SearchResult;
 
 import it.com.ldap.common.ConfigInfo;
 import it.com.ldap.common.Constant;
-import it.com.ldap.common.ValidateUtils;
+import it.com.ldap.common.ValidatorUtils;
+import it.com.ldap.dao.LdapDao;
 import it.com.ldap.entity.Group;
 import it.com.ldap.entity.LdapAttribute;
 import it.com.ldap.entity.User;
@@ -32,7 +33,7 @@ import it.com.ldap.output.OutputResultGroup;
 
 import org.apache.log4j.Logger;
 
-public class LdapImpl {
+public class LdapImpl implements LdapDao {
 	
 	private static final Logger LOG = Logger.getLogger(LdapImpl.class);
 
@@ -49,20 +50,20 @@ public class LdapImpl {
 		return new InitialDirContext(env);
 		
 	}
-	public OutputResult createUser(User user) throws NamingException {
+	public OutputResult createUser(User user) {
 		LOG.info("START--CreateUser");
 		DirContext dctx = null;
 		List<LdapAttribute> listAttr = new ArrayList<LdapAttribute>();
 		try {
 			dctx = ldapContext();
 			// Validate UserDN
-			if(!ValidateUtils.checkNotSpec(user.getUserDN())){
+			if(!ValidatorUtils.checkNotSpec(user.getUserDN())){
 				LOG.error("CreateUser--UserDN not specified: UserDN:="+user.getUserDN());
-				return new OutputResult(Constant.STRING_KO,Constant.ER_001,Constant.UserDNNotSpecified);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_001,Constant.USERDN_NOT_SPECIFIED);
 			}
-			if(!ValidateUtils.checkValidate(user.getUserDN())){
+			if(!ValidatorUtils.checkValidate(user.getUserDN())){
 				LOG.error("CreateUser--UserDN:= "+user.getUserDN()+" is not a valid Ldap DN");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_009,Constant.UserDNValidate);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_009,Constant.USERDN_VALIDATE);
 			}
 			// Create a container set of attributes
 			Attributes container = new BasicAttributes();
@@ -82,21 +83,21 @@ public class LdapImpl {
 			LOG.error("CreateUser--User already exists"+e);
 			System.out.println("CreateUser--User already exists"+e);
 			e.printStackTrace();
-			return new OutputResult(Constant.STRING_KO,Constant.ER_002,Constant.UserAlreadyExists);
+			return new OutputResult(Constant.STRING_KO,Constant.ER_002,Constant.USER_ALREADY_EXISTS);
 		} catch (InvalidAttributeValueException e) {
-			LOG.error("CreateUser--"+Constant.attributeValue(e.getMessage()));
-			System.out.println("CreateUser--"+Constant.attributeValue(e.getMessage()));
+			LOG.error("CreateUser--"+ValidatorUtils.attributeValue(e.getMessage()));
+			System.out.println("CreateUser--"+ValidatorUtils.attributeValue(e.getMessage()));
 			e.printStackTrace();
-			return new OutputResult(Constant.STRING_KO,Constant.ER_008,Constant.attributeValue(e.getMessage()));
+			return new OutputResult(Constant.STRING_KO,Constant.ER_008,ValidatorUtils.attributeValue(e.getMessage()));
 		} catch (InvalidAttributeIdentifierException e) {
-			LOG.error("CreateUser--"+Constant.attributeKey(e.getMessage()));
-			System.out.println("CreateUser"+Constant.attributeKey(e.getMessage()));
-			return new OutputResult(Constant.STRING_KO,Constant.ER_007,Constant.attributeKey(e.getMessage()));
+			LOG.error("CreateUser--"+ValidatorUtils.attributeKey(e.getMessage()));
+			System.out.println("CreateUser"+ValidatorUtils.attributeKey(e.getMessage()));
+			return new OutputResult(Constant.STRING_KO,Constant.ER_007,ValidatorUtils.attributeKey(e.getMessage()));
 		} catch (Exception e) {
 			LOG.error("CreateUser--Generic error"+e.getMessage());
 			System.out.println("CreateUser--Generic error"+e.getMessage());
 			e.printStackTrace();
-			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GenericError+": "+e.getMessage());
+			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GENERIC_ERROR+": "+e.getMessage());
 		} finally {
 			if (null!= dctx) {
 				try {
@@ -107,66 +108,8 @@ public class LdapImpl {
 			}
 		}
 	}
-	/*public void CreateUser() throws NamingException {
-		DirContext dctx = null;
-		try {
-			dctx = ldapContext();
-			// Create a container set of attributes
-			Attributes container = new BasicAttributes();
-
-			// Create the objectclass to add
-			Attribute objClasses = new BasicAttribute("objectClass","inetOrgPerson");
-			//objClasses.add("inetOrgPerson");
-
-			// Assign the username, first name, and last name
-			Attribute commonName = new BasicAttribute("cn", "Test01223");
-			Attribute email = new BasicAttribute("mail", "tuandang1@gmail.com,tuandan2@gmail.com,tuandang3@gmail.com");
-			Attribute givenName = new BasicAttribute("givenName", "tuandanganh");
-			Attribute uid = new BasicAttribute("uid", "TestUser4");
-			Attribute surName = new BasicAttribute("sn", "test3");
-			//Attribute img = new BasicAttribute("jpegPhoto", "456");
-			Attribute photo = new BasicAttribute("photo", "123");
-
-			// Add password
-			Attribute userPassword = new BasicAttribute("userpassword", "test1");
-
-			// Add these to the container
-			container.put(objClasses);
-			container.put(commonName);
-			container.put(givenName);
-			container.put(email);
-			container.put(uid);
-			container.put(surName);
-			container.put(userPassword);
-			//container.put(img);
-			container.put(photo);
-
-			// Create the entry
-			dctx.createSubcontext(getUserDN("Test01223"), container);
-		} catch (NameAlreadyBoundException e) {
-			LOG.error("User already exists"+e);
-			e.printStackTrace();
-		} catch (InvalidAttributeValueException e) {
-			LOG.error("Attribute [attribute key] has not a valid value [attribute value]  "+e);
-			System.out.println(Constant.attributeValue(e.getMessage()));
-			e.printStackTrace();
-		} catch (InvalidAttributeIdentifierException e) {
-			LOG.error("Attribute [attribute key] doesn’t exist"+e);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			if (null != dctx) {
-				try {
-					dctx.close();
-				} catch (final NamingException e) {
-					System.out.println("Error in closing ldap " + e);
-				}
-			}
-		}
-	}*/
 	
-	public OutputResult modifyUser(User user) throws NamingException {
+	public OutputResult modifyUser(User user) {
 		LOG.info("START--ModifyUser");
 		DirContext dctx = null;
 		List<LdapAttribute> listAttrCurrent = new ArrayList<LdapAttribute>();
@@ -175,18 +118,18 @@ public class LdapImpl {
 			dctx = ldapContext();
 			//String name = "cn=TestUser,OU=people,dc=maxcrc,dc=com";
 			
-			if(!ValidateUtils.checkNotSpec(user.getUserDN())){
+			if(!ValidatorUtils.checkNotSpec(user.getUserDN())){
 				LOG.error("ModifyUser--UserDN not specified: UserDN ="+user.getUserDN());
-				return new OutputResult(Constant.STRING_KO,Constant.ER_001,Constant.UserDNNotSpecified);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_001,Constant.USERDN_NOT_SPECIFIED);
 			}
-			if(!ValidateUtils.checkValidate(user.getUserDN())){
+			if(!ValidatorUtils.checkValidate(user.getUserDN())){
 				LOG.error("ModifyUser--UserDN = "+user.getUserDN()+" is not a valid Ldap DN");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_009,Constant.UserDNValidate);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_009,Constant.USERDN_VALIDATE);
 			}
 			User userOld=getUser(user.getUserDN()).getUser();
 			if(userOld==null){
 				LOG.error("ModifyUser--User doesn’t exist: UserDN ="+user.getUserDN());
-				return new OutputResult(Constant.STRING_KO,Constant.ER_003,Constant.UserDoesntExist);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_003,Constant.USER_DOESNT_EXIST);
 			}
 			
 			listAttrCurrent= user.getListAttr();
@@ -221,18 +164,18 @@ public class LdapImpl {
 			LOG.info("END--ModifyUser");
 			return new OutputResult(Constant.STRING_OK,null,null);
 		} catch (InvalidAttributeValueException e) {
-			LOG.error("ModifyUser--"+Constant.attributeValue(e.getMessage()));
-			System.out.println("ModifyUser--"+Constant.attributeValue(e.getMessage()));
+			LOG.error("ModifyUser--"+ValidatorUtils.attributeValue(e.getMessage()));
+			System.out.println("ModifyUser--"+ValidatorUtils.attributeValue(e.getMessage()));
 			e.printStackTrace();
-			return new OutputResult(Constant.STRING_KO,Constant.ER_008,Constant.attributeValue(e.getMessage()));
+			return new OutputResult(Constant.STRING_KO,Constant.ER_008,ValidatorUtils.attributeValue(e.getMessage()));
 		} catch (InvalidAttributeIdentifierException e) {
-			LOG.error("ModifyUser--"+Constant.attributeKey(e.getMessage()));
-			System.out.println("ModifyUser--"+Constant.attributeKey(e.getMessage()));
-			return new OutputResult(Constant.STRING_KO,Constant.ER_007,Constant.attributeKey(e.getMessage()));
+			LOG.error("ModifyUser--"+ValidatorUtils.attributeKey(e.getMessage()));
+			System.out.println("ModifyUser--"+ValidatorUtils.attributeKey(e.getMessage()));
+			return new OutputResult(Constant.STRING_KO,Constant.ER_007,ValidatorUtils.attributeKey(e.getMessage()));
 		} catch (Exception e) {
 			LOG.error("ModifyUser--Generic error"+e.getMessage());
 			System.out.println("ModifyUser--Generic error"+e.getMessage());
-			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GenericError+": "+e.getMessage());
+			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GENERIC_ERROR+": "+e.getMessage());
 		} finally {
 			if (null!= dctx) {
 				try {
@@ -244,61 +187,21 @@ public class LdapImpl {
 		}
 	}
 	
-	/*public void ModifyUser() throws NamingException {
-		DirContext dctx = null;
-		try {
-			dctx = ldapContext();
-			String name = "cn=TestUser,OU=people,dc=maxcrc,dc=com";
-			// Create a container set of attributes
-			final Attributes container = new BasicAttributes();
-
-			// Create the objectclass to add
-			List<String> a = new ArrayList<String>();
-			a.add("geisel@wizards234.com");
-			a.add("geisel@wizards3.com");
-			a.add("geisel@wizards2323.com");
-			ModificationItem[] mods = new ModificationItem[4];
-			for (int i = 0; i < 3; i++) {
-				Attribute email = new BasicAttribute("mail",a.get(i));
-				mods[i] = new ModificationItem(DirContext.REPLACE_ATTRIBUTE, email);
-			}
-			Attribute email1 = new BasicAttribute("o","UserUser");
-			mods[3]=new ModificationItem(DirContext.ADD_ATTRIBUTE, email1);
-			// Add
-			// Remove
-			// modify the entry
-			System.out.println(name);
-			dctx.modifyAttributes(name, mods);
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			if (null != dctx) {
-				try {
-					dctx.close();
-				} catch (final NamingException e) {
-					System.out.println("Error in closing ldap " + e);
-				}
-			}
-		}
-	}*/
-
-	
-
-	public OutputResult deleteUser(String username) throws NamingException {
+	public OutputResult deleteUser(String username) {
 		LOG.info("START--deleteUser");
 		DirContext dctx = null;
 		try {
-			if(!ValidateUtils.checkNotSpec(username)){
+			if(!ValidatorUtils.checkNotSpec(username)){
 				LOG.error("deleteUser--UserDN not specified: UserDN ="+username);
-				return new OutputResult(Constant.STRING_KO,Constant.ER_001,Constant.UserDNNotSpecified);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_001,Constant.USERDN_NOT_SPECIFIED);
 			}
 			if(checkExist(username)==null){
 				LOG.error("deleteUser--User doesn’t exist: UserDN ="+username);
-				return new OutputResult(Constant.STRING_KO,Constant.ER_003,Constant.UserDoesntExist);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_003,Constant.USER_DOESNT_EXIST);
 			}
-			if(!ValidateUtils.checkValidate(username)){
+			if(!ValidatorUtils.checkValidate(username)){
 				LOG.error("deleteUser--UserDN = "+username+" is not a valid Ldap DN");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_009,Constant.UserDNValidate);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_009,Constant.USERDN_VALIDATE);
 			}
 			dctx = ldapContext();
 			dctx.destroySubcontext(getUserDN(username));
@@ -306,7 +209,7 @@ public class LdapImpl {
 			return new OutputResult(Constant.STRING_OK,null,null);
 		} catch (Exception e) {
 			LOG.error("deleteUser--Generic error"+e.getMessage());
-			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GenericError+": "+e.getMessage());
+			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GENERIC_ERROR+": "+e.getMessage());
 		}finally {
 			if (null != dctx) {
 				try {
@@ -319,25 +222,26 @@ public class LdapImpl {
 	}
 	
 	@SuppressWarnings("rawtypes")
-	public OutputResultUser getUser(String userName) throws Exception {
+	public OutputResultUser getUser(String userName) {
 		LOG.info("START--getUser");
 		DirContext dctx = null;
 		OutputResultUser output=null;
+		NamingEnumeration answer=null;
 		User user = null;
 		try{
-			if(!ValidateUtils.checkNotSpec(userName)){
+			if(!ValidatorUtils.checkNotSpec(userName)){
 				LOG.error("getUser--UserDN not specified: UserDN ="+userName);
-				return new OutputResultUser(null,Constant.STRING_KO,Constant.ER_001,Constant.UserDNNotSpecified);
+				return new OutputResultUser(null,Constant.STRING_KO,Constant.ER_001,Constant.USERDN_NOT_SPECIFIED);
 			}
-			if(!ValidateUtils.checkValidate(userName)){
+			if(!ValidatorUtils.checkValidate(userName)){
 				LOG.error("getUser--UserDN = "+userName+" is not a valid Ldap DN");
-				return new OutputResultUser(null,Constant.STRING_KO,Constant.ER_009,Constant.UserDNValidate);
+				return new OutputResultUser(null,Constant.STRING_KO,Constant.ER_009,Constant.USERDN_VALIDATE);
 			}
 			dctx = ldapContext();
 			String filter = "(cn=" + userName + ")";
 			SearchControls ctrl = new SearchControls();
 			ctrl.setSearchScope(SearchControls.SUBTREE_SCOPE);
-			NamingEnumeration answer = dctx.search(ConfigInfo.getInstance().getProperty("DC"), filter, ctrl);
+			answer = dctx.search(ConfigInfo.getInstance().getProperty("DC"), filter, ctrl);
 			if (answer.hasMore()) {
 				user = new User();
 				user.setUserDN(userName);
@@ -345,7 +249,6 @@ public class LdapImpl {
 				SearchResult result = (SearchResult) answer.next();
 				Attributes attributes = result.getAttributes();
 				NamingEnumeration namingEnumeration = attributes.getAll();
-				
 				LdapAttribute ldapAttr = new LdapAttribute();
 				ldapAttr.setKey("userPassword");
 				String pass=new String((byte[])attributes.get("userPassword").get());
@@ -359,7 +262,6 @@ public class LdapImpl {
 						LdapAttribute ldapAttribute=new LdapAttribute();
 						List<String> listString = new ArrayList<String>();
 						ldapAttribute.setKey(elementsAttr[0].trim());
-						//System.out.println(elementsAttr[0]);
 						String[] subElementAttr=elementsAttr[1].trim().split(",");
 						for (int i = 0; i < subElementAttr.length; i++) {
 							listString.add(subElementAttr[i].trim());
@@ -371,15 +273,22 @@ public class LdapImpl {
 				user.setListAttr(listAttr);
 				output= new OutputResultUser(user,Constant.STRING_OK,null,null);
 			} else {
-				output= new OutputResultUser(null,Constant.STRING_KO,Constant.ER_003,Constant.UserDoesntExist);
+				output= new OutputResultUser(null,Constant.STRING_KO,Constant.ER_003,Constant.USER_DOESNT_EXIST);
 			}
-			answer.close();
+			
 			LOG.info("END--getUser");
 			return output;
 		} catch (Exception e) {
 			LOG.error("getUser--Generic error"+e.getMessage());
-			return new OutputResultUser(null,Constant.STRING_KO,Constant.ER_011,Constant.GenericError+": "+e.getMessage());
+			return new OutputResultUser(null,Constant.STRING_KO,Constant.ER_011,Constant.GENERIC_ERROR+": "+e.getMessage());
 		}finally {
+			if (null != answer) {
+				try {
+					answer.close();
+				} catch (final NamingException e) {
+					LOG.error("getUser--Error in closing ldap " + e.getMessage());
+				}
+			}
 			if (null != dctx) {
 				try {
 					dctx.close();
@@ -389,24 +298,21 @@ public class LdapImpl {
 			}
 		}
 	}
-	
-	
 
-
-	public OutputResult createGroup(Group group) throws NamingException {
+	public OutputResult createGroup(Group group) {
 		LOG.info("START--CreateGroup");
 		DirContext dcxt = null;
 		List<LdapAttribute> listAttr = new ArrayList<LdapAttribute>();
 		try {
 			dcxt = ldapContext();
 			
-			if(!ValidateUtils.checkNotSpec(group.getGroupDN())){
+			if(!ValidatorUtils.checkNotSpec(group.getGroupDN())){
 				LOG.error("CreateGroup--getGroupDN not specified: UserDN ="+group.getGroupDN());
-				return new OutputResult(Constant.STRING_KO,Constant.ER_004,Constant.UserDNNotSpecified);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_004,Constant.USERDN_NOT_SPECIFIED);
 			}
-			if(!ValidateUtils.checkValidate(group.getGroupDN())){
+			if(!ValidatorUtils.checkValidate(group.getGroupDN())){
 				LOG.error("CreateGroup--GroupDN := "+group.getGroupDN()+" is not a valid Ldap DN");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_010,Constant.UserDNValidate);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_010,Constant.USERDN_VALIDATE);
 			}
 			// Create a container set of attributes
 			Attributes container = new BasicAttributes();
@@ -426,21 +332,21 @@ public class LdapImpl {
 			LOG.error("CreateGroup--GroupDN already exists "+e.getMessage());
 			System.out.println("CreateGroup--GroupDN already exists "+e.getMessage());
 			e.printStackTrace();
-			return new OutputResult(Constant.STRING_KO,Constant.ER_005,Constant.GroupAlreadyExists);
+			return new OutputResult(Constant.STRING_KO,Constant.ER_005,Constant.GROUP_ALREADY_EXISTS);
 		} catch (InvalidAttributeValueException e) {
-			LOG.error("CreateGroup--"+Constant.attributeValue(e.getMessage()));
-			System.out.println("CreateGroup--"+Constant.attributeValue(e.getMessage()));
+			LOG.error("CreateGroup--"+ValidatorUtils.attributeValue(e.getMessage()));
+			System.out.println("CreateGroup--"+ValidatorUtils.attributeValue(e.getMessage()));
 			e.printStackTrace();
-			return new OutputResult(Constant.STRING_KO,Constant.ER_008,Constant.attributeValue(e.getMessage()));
+			return new OutputResult(Constant.STRING_KO,Constant.ER_008,ValidatorUtils.attributeValue(e.getMessage()));
 		} catch (InvalidAttributeIdentifierException e) {
-			LOG.error("CreateGroup--"+Constant.attributeKey(e.getMessage()));
-			System.out.println("CreateGroup--"+Constant.attributeKey(e.getMessage()));
-			return new OutputResult(Constant.STRING_KO,Constant.ER_007,Constant.attributeKey(e.getMessage()));
+			LOG.error("CreateGroup--"+ValidatorUtils.attributeKey(e.getMessage()));
+			System.out.println("CreateGroup--"+ValidatorUtils.attributeKey(e.getMessage()));
+			return new OutputResult(Constant.STRING_KO,Constant.ER_007,ValidatorUtils.attributeKey(e.getMessage()));
 		} catch (Exception e) {
 			LOG.error("CreateGroup--Generic error"+e.getMessage());
 			System.out.println("CreateGroup--Generic error"+e.getMessage());
 			e.printStackTrace();
-			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GenericError+": "+e.getMessage());
+			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GENERIC_ERROR+": "+e.getMessage());
 		} finally {
 			if (null!= dcxt) {
 				try {
@@ -452,7 +358,7 @@ public class LdapImpl {
 		}
 	}
 	
-	public OutputResult modifyGroup(Group group) throws NamingException {
+	public OutputResult modifyGroup(Group group) {
 		LOG.info("START--ModifyGroup");
 		DirContext dctx = null;
 		List<LdapAttribute> listAttrCurrent = new ArrayList<LdapAttribute>();
@@ -461,18 +367,18 @@ public class LdapImpl {
 			dctx = ldapContext();
 			//String name = "cn=TestUser,OU=people,dc=maxcrc,dc=com";
 			
-			if(!ValidateUtils.checkNotSpec(group.getGroupDN())){
+			if(!ValidatorUtils.checkNotSpec(group.getGroupDN())){
 				LOG.error("ModifyGroup--GroupDN not specified: GroupDN ="+group.getGroupDN());
-				return new OutputResult(Constant.STRING_KO,Constant.ER_004,Constant.UserDNNotSpecified);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_004,Constant.USERDN_NOT_SPECIFIED);
 			}
-			if(!ValidateUtils.checkValidate(group.getGroupDN())){
+			if(!ValidatorUtils.checkValidate(group.getGroupDN())){
 				LOG.error("ModifyGroup-- GroupDN "+group.getGroupDN()+"is not a valid Ldap DN");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_010,Constant.UserDNValidate);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_010,Constant.USERDN_VALIDATE);
 			}
 			Group GroupOld=getGroup(group.getGroupDN()).getGroup();
 			if(GroupOld==null){
 				LOG.error("ModifyGroup--Group doesn’t exist");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_006,Constant.UserDoesntExist);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_006,Constant.USER_DOESNT_EXIST);
 			}
 			listAttrCurrent= group.getListAttr();
 			listAttrOld =GroupOld.getListAttr();
@@ -506,19 +412,19 @@ public class LdapImpl {
 			LOG.info("END--ModifyGroup");
 			return new OutputResult(Constant.STRING_OK,null,null);
 		} catch (InvalidAttributeValueException e) {
-			LOG.error("ModifyGroup--"+Constant.attributeValue(e.getMessage()));
-			System.out.println("ModifyGroup--"+Constant.attributeValue(e.getMessage()));
+			LOG.error("ModifyGroup--"+ValidatorUtils.attributeValue(e.getMessage()));
+			System.out.println("ModifyGroup--"+ValidatorUtils.attributeValue(e.getMessage()));
 			e.printStackTrace();
-			return new OutputResult(Constant.STRING_KO,Constant.ER_008,Constant.attributeValue(e.getMessage()));
+			return new OutputResult(Constant.STRING_KO,Constant.ER_008,ValidatorUtils.attributeValue(e.getMessage()));
 		} catch (InvalidAttributeIdentifierException e) {
-			LOG.error("ModifyGroup--"+Constant.attributeKey(e.getMessage()));
-			System.out.println("ModifyGroup--"+Constant.attributeKey(e.getMessage()));
-			return new OutputResult(Constant.STRING_KO,Constant.ER_007,Constant.attributeKey(e.getMessage()));
+			LOG.error("ModifyGroup--"+ValidatorUtils.attributeKey(e.getMessage()));
+			System.out.println("ModifyGroup--"+ValidatorUtils.attributeKey(e.getMessage()));
+			return new OutputResult(Constant.STRING_KO,Constant.ER_007,ValidatorUtils.attributeKey(e.getMessage()));
 		} catch (Exception e) {
 			LOG.error("ModifyGroup--Generic error"+e.getMessage());
 			System.out.println("ModifyGroup--Generic error"+e.getMessage());
 			e.printStackTrace();
-			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GenericError+": "+e.getMessage());
+			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GENERIC_ERROR+": "+e.getMessage());
 		} finally {
 			if (null!= dctx) {
 				try {
@@ -531,25 +437,26 @@ public class LdapImpl {
 	}
 	
 	@SuppressWarnings("rawtypes")
-	public OutputResultGroup getGroup(String groupName) throws Exception {
+	public OutputResultGroup getGroup(String groupName) {
 		LOG.info("START--getGroup");
 		DirContext dctx = null;
 		OutputResultGroup output=null;
+		NamingEnumeration answer = null;
 		Group group = null;
 		try{
-			if(!ValidateUtils.checkNotSpec(groupName)){
+			if(!ValidatorUtils.checkNotSpec(groupName)){
 				LOG.error("getGroup--GroupDN not specified: GroupDN ="+groupName);
-				return new OutputResultGroup(null,Constant.STRING_KO,Constant.ER_004,Constant.GroupDNNotSpecified);
+				return new OutputResultGroup(null,Constant.STRING_KO,Constant.ER_004,Constant.GROUPDN_NOT_SPECIFIED);
 			}
-			if(!ValidateUtils.checkValidate(groupName)){
+			if(!ValidatorUtils.checkValidate(groupName)){
 				LOG.error("getGroup--GroupDN: = "+groupName+"is not a valid Ldap DN");
-				return new OutputResultGroup(null,Constant.STRING_KO,Constant.ER_010,Constant.GroupDNValidate);
+				return new OutputResultGroup(null,Constant.STRING_KO,Constant.ER_010,Constant.GROUPDN_VALIDATE);
 			}
 			dctx = ldapContext();
 			String filter = "(cn=" + groupName + ")";
 			SearchControls ctrl = new SearchControls();
 			ctrl.setSearchScope(SearchControls.SUBTREE_SCOPE);
-			NamingEnumeration answer = dctx.search(ConfigInfo.getInstance().getProperty("DC"), filter, ctrl);
+			answer = dctx.search(ConfigInfo.getInstance().getProperty("DC"), filter, ctrl);
 			if (answer.hasMore()) {
 				group = new Group();
 				group.setGroupDN(groupName);
@@ -557,6 +464,13 @@ public class LdapImpl {
 				SearchResult result = (SearchResult) answer.next();
 				Attributes attributes = result.getAttributes();
 				NamingEnumeration namingEnumeration = attributes.getAll();
+				LdapAttribute ldapAttr = new LdapAttribute();
+				ldapAttr.setKey("userPassword");
+				String pass=new String((byte[])attributes.get("userPassword").get());
+				List<String> listPass = new  ArrayList<String>();
+				listPass.add(pass.trim());
+				ldapAttr.setValues(listPass);
+				listAttr.add(ldapAttr);
 				while(namingEnumeration.hasMoreElements()){
 					String[]elementsAttr=String.valueOf(namingEnumeration.next()).trim().split(":");
 					if(!elementsAttr[0].trim().equalsIgnoreCase("userPassword")){
@@ -575,41 +489,48 @@ public class LdapImpl {
 				group.setListAttr(listAttr);
 				output= new OutputResultGroup(group,Constant.STRING_OK,null,null);
 			} else {
-				output= new OutputResultGroup(null,Constant.STRING_KO,Constant.ER_006,Constant.GroupDoesntExist);
+				output= new OutputResultGroup(null,Constant.STRING_KO,Constant.ER_006,Constant.GROUP_DOESNT_EXIST);
 			}
-			answer.close();
+			
 			LOG.info("END--getGroup");
 			return output;
 		} catch (Exception e) {
 			LOG.error("getGroup--Generic error"+e.getMessage());
 			System.out.println("getGroup--Generic error"+e.getMessage());
-			return new OutputResultGroup(null,Constant.STRING_KO,Constant.ER_011,Constant.GenericError+": "+e.getMessage());
+			return new OutputResultGroup(null,Constant.STRING_KO,Constant.ER_011,Constant.GENERIC_ERROR+": "+e.getMessage());
 		}finally {
+			if (null != answer) {
+				try {
+					answer.close();
+				} catch (final NamingException e) {
+					LOG.error("getUser--Error in closing ldap " + e.getMessage());
+				}
+			}
 			if (null != dctx) {
 				try {
 					dctx.close();
 				} catch (final NamingException e) {
-					LOG.error("getGroup--Error in closing ldap " + e.getMessage());
+					LOG.error("getUser--Error in closing ldap " + e.getMessage());
 				}
 			}
 		}
 	}
 	
-	public OutputResult deleteGroup(String groupName) throws NamingException {
+	public OutputResult deleteGroup(String groupName) {
 		LOG.info("START--deleteGroup");
 		DirContext dctx = null;
 		try {
-			if(!ValidateUtils.checkNotSpec(groupName)){
+			if(!ValidatorUtils.checkNotSpec(groupName)){
 				LOG.error("deleteGroup--GroupDN not specified: GroupDN ="+groupName);
-				return new OutputResult(Constant.STRING_KO,Constant.ER_004,Constant.GroupDNNotSpecified);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_004,Constant.GROUPDN_NOT_SPECIFIED);
 			}
 			if(checkExist(groupName)==null){
 				LOG.error("deleteGroup--Group doesn’t exist");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_006,Constant.GroupDoesntExist);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_006,Constant.GROUP_DOESNT_EXIST);
 			}
-			if(!ValidateUtils.checkValidate(groupName)){
+			if(!ValidatorUtils.checkValidate(groupName)){
 				LOG.error("deleteGroup--GroupDN := "+groupName+" is not a valid Ldap DN");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_010,Constant.GroupDNValidate);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_010,Constant.GROUPDN_VALIDATE);
 			}
 			dctx = ldapContext();
 			dctx.destroySubcontext(getGroupDN(groupName));
@@ -618,7 +539,7 @@ public class LdapImpl {
 		} catch (Exception e) {
 			LOG.error("deleteGroup--Generic error"+e.getMessage());
 			System.out.println("deleteGroup--Generic error"+e.getMessage());
-			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GenericError+": "+e.getMessage());
+			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GENERIC_ERROR+": "+e.getMessage());
 		}finally {
 			if (null != dctx) {
 				try {
@@ -630,47 +551,52 @@ public class LdapImpl {
 		}
 	}
 	
-	public OutputResult assignUserToGroup(String userDN,String groupDN){
+	public OutputResult assignUserToGroup(String userDN, String groupDN) {
 		LOG.info("START--AssignUserToGroup");
 		DirContext dctx = null;
 		try {
 			//validate group
-			if(!ValidateUtils.checkNotSpec(groupDN)){
+			if(!ValidatorUtils.checkNotSpec(groupDN)){
 				LOG.error("AssignUserToGroup--GroupDN not specified: GroupDN ="+groupDN);
-				return new OutputResult(Constant.STRING_KO,Constant.ER_004,Constant.GroupDNNotSpecified);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_004,Constant.GROUPDN_NOT_SPECIFIED);
 			}
 			if(checkExist(groupDN)==null){
 				LOG.error("AssignUserToGroup--Group doesn’t exist");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_006,Constant.GroupDoesntExist);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_006,Constant.GROUP_DOESNT_EXIST);
 			}
-			if(!ValidateUtils.checkValidate(groupDN)){
+			if(!ValidatorUtils.checkValidate(groupDN)){
 				LOG.error("AssignUserToGroup--GroupDN := "+groupDN+" is not a valid Ldap DN");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_010,Constant.GroupDNValidate);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_010,Constant.GROUPDN_VALIDATE);
 			}
 			//validate user
-			if(!ValidateUtils.checkNotSpec(userDN)){
+			if(!ValidatorUtils.checkNotSpec(userDN)){
 				LOG.error("AssignUserToGroup--userDN not specified: GroupDN ="+userDN);
-				return new OutputResult(Constant.STRING_KO,Constant.ER_001,Constant.UserDNNotSpecified);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_001,Constant.USERDN_NOT_SPECIFIED);
 			}
 			if(checkExist(userDN)==null){
 				LOG.error("AssignUserToGroup--userDN doesn’t exist");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_003,Constant.UserDoesntExist);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_003,Constant.USER_DOESNT_EXIST);
 			}
-			if(!ValidateUtils.checkValidate(userDN)){
+			if(!ValidatorUtils.checkValidate(userDN)){
 				LOG.error("AssignUserToGroup--userDN := "+userDN+" is not a valid Ldap DN");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_009,Constant.UserDNValidate);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_009,Constant.USERDN_VALIDATE);
 			}
 			dctx = ldapContext();
-			ModificationItem[] mods = new ModificationItem[1];
-            Attribute mod = new BasicAttribute("uniqueMember",getUserDN(userDN));
-            mods[0] = new ModificationItem(DirContext.ADD_ATTRIBUTE, mod);
-            dctx.modifyAttributes(getGroupDN(groupDN), mods);
+			ModificationItem[] modsGroup = new ModificationItem[1];
+            Attribute modGroup = new BasicAttribute("memberuid",getUserDN(userDN));
+            modsGroup[0] = new ModificationItem(DirContext.ADD_ATTRIBUTE, modGroup);
+            dctx.modifyAttributes(getGroupDN(groupDN), modsGroup);
+            
+            ModificationItem[] modsUser = new ModificationItem[1];
+            Attribute modUser = new BasicAttribute("ou",getGroupDN(groupDN));
+            modsUser[0] = new ModificationItem(DirContext.ADD_ATTRIBUTE, modUser);
+            dctx.modifyAttributes(getUserDN(userDN), modsUser);
             LOG.info("END--AssignUserToGroup");
             return new OutputResult(Constant.STRING_OK,null,null);
 		} catch (Exception e) {
 			LOG.error("AssignUserToGroup--Generic error"+e.getMessage());
 			System.out.println("AssignUserToGroup--Generic error"+e.getMessage());
-			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GenericError+": "+e.getMessage());
+			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GENERIC_ERROR+": "+e.getMessage());
 		}finally {
 			if (null != dctx) {
 				try {
@@ -682,47 +608,52 @@ public class LdapImpl {
 		}
 	}
 	
-	public OutputResult removeUserFromGroup(String userDN,String groupDN){
+	public OutputResult removeUserFromGroup(String userDN, String groupDN) {
 		LOG.info("START--RemoveUserFromGroup");
 		DirContext dctx = null;
 		try {
 			//validate group
-			if(!ValidateUtils.checkNotSpec(groupDN)){
+			if(!ValidatorUtils.checkNotSpec(groupDN)){
 				LOG.error("RemoveUserFromGroup--GroupDN not specified: GroupDN ="+groupDN);
-				return new OutputResult(Constant.STRING_KO,Constant.ER_004,Constant.GroupDNNotSpecified);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_004,Constant.GROUPDN_NOT_SPECIFIED);
 			}
 			if(checkExist(groupDN)==null){
 				LOG.error("RemoveUserFromGroup--Group doesn’t exist");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_006,Constant.GroupDoesntExist);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_006,Constant.GROUP_DOESNT_EXIST);
 			}
-			if(!ValidateUtils.checkValidate(groupDN)){
+			if(!ValidatorUtils.checkValidate(groupDN)){
 				LOG.error("RemoveUserFromGroup--GroupDN := "+groupDN+" is not a valid Ldap DN");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_010,Constant.GroupDNValidate);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_010,Constant.GROUPDN_VALIDATE);
 			}
 			//validate user
-			if(!ValidateUtils.checkNotSpec(userDN)){
+			if(!ValidatorUtils.checkNotSpec(userDN)){
 				LOG.error("RemoveUserFromGroup--userDN not specified: GroupDN ="+userDN);
-				return new OutputResult(Constant.STRING_KO,Constant.ER_001,Constant.UserDNNotSpecified);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_001,Constant.USERDN_NOT_SPECIFIED);
 			}
 			if(checkExist(userDN)==null){
 				LOG.error("RemoveUserFromGroup--userDN doesn’t exist");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_003,Constant.UserDoesntExist);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_003,Constant.USER_DOESNT_EXIST);
 			}
-			if(!ValidateUtils.checkValidate(userDN)){
+			if(!ValidatorUtils.checkValidate(userDN)){
 				LOG.error("RemoveUserFromGroup--userDN := "+userDN+" is not a valid Ldap DN");
-				return new OutputResult(Constant.STRING_KO,Constant.ER_009,Constant.UserDNValidate);
+				return new OutputResult(Constant.STRING_KO,Constant.ER_009,Constant.USERDN_VALIDATE);
 			}
 			dctx = ldapContext();
-			ModificationItem[] mods = new ModificationItem[1];
-			Attribute mod =new BasicAttribute("uniqueMember",getUserDN(userDN));
-	        mods[0] =new ModificationItem(DirContext.REMOVE_ATTRIBUTE, mod);
-	        dctx.modifyAttributes(getGroupDN(groupDN), mods);
+			ModificationItem[] modsGroup = new ModificationItem[1];
+            Attribute modGroup = new BasicAttribute("memberuid",getUserDN(userDN));
+            modsGroup[0] = new ModificationItem(DirContext.REMOVE_ATTRIBUTE, modGroup);
+            dctx.modifyAttributes(getGroupDN(groupDN), modsGroup);
+            
+            ModificationItem[] modsUser = new ModificationItem[1];
+            Attribute modUser = new BasicAttribute("ou",getGroupDN(groupDN));
+            modsUser[0] = new ModificationItem(DirContext.REMOVE_ATTRIBUTE, modUser);
+            dctx.modifyAttributes(getUserDN(userDN), modsUser);
 	        LOG.info("END--RemoveUserFromGroup");
 	        return new OutputResult(Constant.STRING_OK,null,null);
 		} catch (Exception e) {
 			LOG.error("RemoveUserFromGroup--Generic error"+e.getMessage());
 			System.out.println("RemoveUserFromGroup--Generic error"+e.getMessage());
-			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GenericError+": "+e.getMessage());
+			return new OutputResult(Constant.STRING_KO,Constant.ER_011,Constant.GENERIC_ERROR+": "+e.getMessage());
 		}finally {
 			if (null != dctx) {
 				try {
@@ -734,39 +665,8 @@ public class LdapImpl {
 		}
 	}
 
-	/*public void addGroup(String name,String description) throws NamingException {
-		DirContext dcxt = null;
-		try {
-			dcxt = ldapContext();
-			// Create a container set of attributes
-			Attributes container = new BasicAttributes();
-
-			// Create the objectclass to add
-			Attribute objClasses = new BasicAttribute("objectClass");
-			objClasses.add("top");
-			objClasses.add("posixGroup");
-
-			// Assign the name and description to the group
-			Attribute cn = new BasicAttribute("cn", name);
-			Attribute gid = new BasicAttribute("gidNumber", "6334");
-			Attribute desc = new BasicAttribute("description", description);
-
-			// Add these to the container
-			container.put(objClasses);
-			container.put(cn);
-			container.put(gid);
-			container.put(desc);
-
-			// Create the entry
-			dcxt.createSubcontext(getGroupDN(name), container);
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println(Constant.attributeKey(e.getMessage()));
-		}
-	}*/
-	
 	@SuppressWarnings("rawtypes")
-	public String checkExist(String name) throws Exception {
+	public String checkExist(String name) {
 		LOG.info("START--checkExist");
 		DirContext dctx = null;
 		String dn=null;
@@ -786,9 +686,23 @@ public class LdapImpl {
 			LOG.info("END--checkExist");
 			return dn;
 		}catch (Exception e) {
+			LOG.error("checkExist--Exception: "+e.getMessage());
 			return dn;
 		}finally{
-			answer.close();
+			if (null != answer) {
+				try {
+					answer.close();
+				} catch (final NamingException e) {
+					LOG.error("getUser--Error in closing ldap " + e.getMessage());
+				}
+			}
+			if (null != dctx) {
+				try {
+					dctx.close();
+				} catch (final NamingException e) {
+					LOG.error("getUser--Error in closing ldap " + e.getMessage());
+				}
+			}
 		}
 		
 	}

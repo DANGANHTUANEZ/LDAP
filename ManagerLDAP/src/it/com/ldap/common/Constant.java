@@ -1,6 +1,10 @@
 package it.com.ldap.common;
 
-
+/**
+ * 
+ * @author datuan
+ *
+ */
 public class Constant {
 	
 	public static final String STRING_OK = "OK";
@@ -18,35 +22,21 @@ public class Constant {
 	public static final String ER_010 = "10";
 	public static final String ER_011 = "11";
 	
-	public static final String UserDNNotSpecified="UserDN not specified";
-	public static final String UserAlreadyExists="User already exists";
-	//public static final String UserAttributeKey="Attribute [attribute key] doesn’t exist";
-	//public static final String UserAttributeValue="Attribute [attribute key] has not a valid value [attribute value]  (Only If applicable)";
-	public static final String UserDNValidate="UserDN is not a valid Ldap DN";
-	public static final String UserDoesntExist="User doesn’t exist";
+	public static final String USERDN_NOT_SPECIFIED		="UserDN not specified";
+	public static final String USER_ALREADY_EXISTS		="User already exists";
+	public static final String USERDN_VALIDATE			="UserDN is not a valid Ldap DN";
+	public static final String USER_DOESNT_EXIST		="User doesn’t exist";
 	
 	
-	public static final String GroupDNNotSpecified="GroupDN not specified";
-	public static final String GroupAlreadyExists="Group already exists";
-	//public static final String GroupAttributeKey="Attribute [attribute key] doesn’t exist";
-	//public static final String GroupAttributeValue="Attribute [attribute key] has not a valid value [attribute value]  (Only If applicable)";
-	public static final String GroupDNValidate="UserDN is not a valid Ldap DN";
-	public static final String GroupDoesntExist="User doesn’t exist";
+	public static final String GROUPDN_NOT_SPECIFIED	="GroupDN not specified";
+	public static final String GROUP_ALREADY_EXISTS		="Group already exists";
+	public static final String GROUPDN_VALIDATE			="GroupDN is not a valid Ldap DN";
+	public static final String GROUP_DOESNT_EXIST		="Group doesn’t exist";
 	
-	public static final String GenericError="Generic error [internal description if available]";
+	public static final String GENERIC_ERROR			="Generic error";
 	
 	
-	public static String attributeKey(String msg){
-		String[] arrStr = msg.split(":");
-		System.out.println(arrStr[1]);
-		return "Attribute [attribute key:= "+arrStr[1].substring(arrStr[1].indexOf("-")+1, arrStr[1].length()).trim()+"] doesn’t exist";
-	}
 	
-	public static String attributeValue(String msg){
-		String[] arrStr = msg.split(":");
-		System.out.println(arrStr[1]);
-		return "Attribute [attribute key:= "+arrStr[1].substring(arrStr[1].indexOf("-")+1, arrStr[1].length()).trim()+"] has not a valid value";
-	}
 	
 	
 }

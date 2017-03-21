@@ -1540,3 +1540,999 @@
 
 ======2017-Mar-21 09:56:45 [main] it.com.ldap.Impl.LdapImpl 
   ERROR Attribute [attribute key] has not a valid value [attribute value]  javax.naming.directory.InvalidAttributeValueException: [LDAP: error code 21 - photo: no validator for syntax 1.3.6.1.4.1.1466.115.121.1.23]; remaining name 'cn=Test01223,OU=people,dc=maxcrc,dc=com'
+
+======2017-Mar-21 10:59:54 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--getUser
+
+======2017-Mar-21 10:59:54 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR getUser--UserDN not specified: UserDN =
+
+======2017-Mar-21 10:59:54 [main] it.com.ldap.test.TestCreateUser 
+  INFO  haha
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:25:05 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR AssignUserToGroup--Generic error[LDAP: error code 65 - attribute 'uniqueMember' not allowed]
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:27:19 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR AssignUserToGroup--Generic error[LDAP: error code 17 - menberUid: attribute type undefined]
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:28:13 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR AssignUserToGroup--Generic error[LDAP: error code 17 - menberUid: attribute type undefined]
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:29:00 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR AssignUserToGroup--Generic error[LDAP: error code 17 - menberUid: attribute type undefined]
+
+======2017-Mar-21 11:39:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 11:39:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:39:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:39:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:39:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:39:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:39:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:39:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:39:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:40:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:40:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:42:32 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR AssignUserToGroup--Generic error[LDAP: error code 21 - memberOf: value #0 invalid per syntax]
+
+======2017-Mar-21 11:43:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 11:43:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:43:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:43:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:43:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:43:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:43:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:43:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:43:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:43:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:43:19 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:43:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 11:45:17 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR AssignUserToGroup--Generic error[LDAP: error code 20 - modify/add: memberOf: value #0 already exists]
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 13:41:55 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR AssignUserToGroup--Generic error[LDAP: error code 20 - modify/add: memberOf: value #0 already exists]
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 13:42:50 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 13:43:00 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:25:36 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:27:01 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR AssignUserToGroup--Generic error[LDAP: error code 20 - modify/add: memberUid: value #0 already exists]
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:27:41 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:28:15 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR AssignUserToGroup--Generic error[LDAP: error code 65 - attribute 'member' not allowed]
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:32:38 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR AssignUserToGroup--Generic error[LDAP: error code 20 - modify/add: memberUid: value #0 already exists]
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--RemoveUserFromGroup
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:34:34 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR RemoveUserFromGroup--Generic error[LDAP: error code 16 - modify/delete: ou: no such value]
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:35:04 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--RemoveUserFromGroup
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:35:11 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--RemoveUserFromGroup
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:08 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--RemoveUserFromGroup
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:30 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--RemoveUserFromGroup
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--RemoveUserFromGroup
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:34 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--RemoveUserFromGroup
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:36:42 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--AssignUserToGroup
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 14:37:23 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--AssignUserToGroup
+
+======2017-Mar-21 15:41:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--deleteUser
+
+======2017-Mar-21 15:41:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 15:41:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 15:41:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 15:41:44 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 15:41:44 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR deleteUser--User doesn’t exist: UserDN =Test333
+
+======2017-Mar-21 15:45:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--deleteUser
+
+======2017-Mar-21 15:45:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--checkExist
+
+======2017-Mar-21 15:45:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 15:45:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 15:45:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--checkExist
+
+======2017-Mar-21 15:45:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 15:45:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 15:45:27 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--deleteUser
+
+======2017-Mar-21 16:55:06 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--CreateUser
+
+======2017-Mar-21 16:55:06 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  START--ldapContext
+
+======2017-Mar-21 16:55:06 [main] it.com.ldap.Impl.LdapImpl 
+  INFO  END--ldapContext
+
+======2017-Mar-21 16:55:06 [main] it.com.ldap.Impl.LdapImpl 
+  ERROR CreateUser--User already existsjavax.naming.NameAlreadyBoundException: [LDAP: error code 68 - Entry Already Exists]; remaining name 'cn=TestUser333,OU=people,dc=maxcrc,dc=com'
